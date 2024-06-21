@@ -24,7 +24,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('./../assets/a_0471ad1add8977f69c7634dad4673995.gif') no-repeat center center/cover;
+    background: url('https://cdn.discordapp.com/attachments/1182078962806030367/1183914476819456050/a_0471ad1add8977f69c7634dad4673995.gif?ex=66760dc7&is=6674bc47&hm=e5b280e226bb9f9fe25a7e268ad52680e4d4dcbcc3487d60826624ee98d9dc51&') no-repeat center center/cover;
     z-index: -1;
 }
 
