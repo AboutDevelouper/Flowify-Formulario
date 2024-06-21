@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarala', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: 'ads';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.discordapp.com/attachments/1182078962806030367/1183914476819456050/a_0471ad1add8977f69c7634dad4673995.gif?ex=66741387&is=6672c207&hm=44c90b7d7a4687eac31e16b6aa211e356cea0727393b00712c16580abbe64322&') no-repeat center center/cover;
+    z-index: -1;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    background: rgba(34, 34, 34, 0.85);
+    width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
+}
+
+.discord-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 1.5s infinite alternate, swing 1s infinite alternate;
+    transition: transform 0.3s;
+}
+
+.discord-button:hover {
+    transform: scale(1.2);
+}
+
+.discord-button img {
+    width: 95%;
+    height: auto;
+    border-radius: 50%;
+}
+
+section h2 {
+    color: #0077ff;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    font-family: 'Righteous', cursive;
+    text-shadow: 2px 2px 10px rgba(0, 0, 255, 0.2);
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+form button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    background: #0077ff;
+    border: none;
+    color: #fff;
+    transition: background 0.3s, transform 0.3s;
+    border-radius: 10px;
+}
+
+form button:hover {
+    background: #005eff;
+    transform: scale(1.05);
+}
+
+form button:active {
+    background: #0040ff;
+    transform: scale(1);
+}
