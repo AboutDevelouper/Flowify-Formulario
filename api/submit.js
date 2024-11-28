@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const WEBHOOK_URL = `https://discord.com/api/webhooks/1253554342477299824/mCs-SBymbFdKDRmehyVjDVTXrDZ6JnUmZYhcgna4flFpUISC8h3ZOnd4Ur3Dhwar0mX0`;
+const WEBHOOK_URL = ``;
 const TIMEOUT_DURATION = 60000;
 const IP_REQUESTS = {};
 
