@@ -1,7 +1,7 @@
 {
   "name": "my-project",
   "version": "1.0.0",
-  "main": "api/submit.js",
+  "main": "index.js",
   "dependencies": {
     "express": "^4.19.2",
     "node-fetch": "^2.6.1",
